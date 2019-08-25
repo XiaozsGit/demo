@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script language="JavaScript">
+		var fso=new ActiveXObject("Scripting.FileSystemObject");
+		var s=fso.GetFolder("./images");
+		var fn=new Enumerator(s.files);
+		var s="";
+		for(;!fn.atEnd();fn.moveNext()){
+      s=s+fn.item()+"\n";
+      alert(s);
+		}
+		
+	</script>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,135 @@
+
+// ---------------- 导航 nav -----------------------
+nav {
+  // position: relative;
+  height: 83px;
+  display: flex;
+  border-bottom: 2px solid #ccc;
+
+  a {
+    flex: 1;
+    margin: 14px 0 12px;
+    text-align: center;
+    line-height: 83- 14 - 12px;
+    color: #000;
+    font-size: 22px;
+    span {
+      position: relative;
+    }
+    &:nth-child(2) {
+      border-left: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+
+    }
+
+  }
+  .lighten {
+    background-image: -webkit-linear-gradient(left ,#EC1EA0,#B905EB); 
+
+    -webkit-background-clip: text; 
+
+    -webkit-text-fill-color: transparent; 
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100% + 50px;
+      height: 4px;
+      background-image: -webkit-linear-gradient(left ,#EC1EA0,#B905EB);
+      left: -50%;
+      right: -50%;
+      margin: 0 auto;
+      bottom: -27px;
+
+    }
+  }
+
+}
+
+// ---------------- 具体评价 evaluate ---------------
+.evaluate {
+
+  // ---- 评价预览导航 eva-nav --------
+  .eva-nav {
+    // height: 124px;
+    padding-left: 25px;
+    padding-top: 18px;
+    a {
+      display: inline-block;
+      padding: 9px 15px 10px 15px;
+      margin: 0 14px 18px  0;
+      border: 1px solid #CD39E6; 
+      font-family: 'iconfont';
+      font-size: 18px;
+      border-radius: 20px;
+      background-image: -webkit-linear-gradient(left ,#EC1EA0,#B905EB); 
+      -webkit-background-clip: text;   
+      -webkit-text-fill-color: transparent; 
+    }
+
+    .lighten {
+      border: none;
+      background: -webkit-linear-gradient(left ,#EC1EA0,#B905EB);
+      -webkit-text-fill-color: white; 
+    }
+  }
+
+  // ----- 评价 -------------
+  .one {
+    border-top: 2px solid #ccc;
+    padding: 0 23px;
+    h3 {
+      position: relative;
+      font-size: 18px;
+      height: 73px;
+      line-height: 73px;
+      font-weight: 400;
+      padding-left: 62px;
+      border-bottom: 2px solid #ccc;
+     
+      &:before {
+        position: absolute;
+        content: "";
+        width: 47px;
+        height: 44px;
+        background: url(../uploads/user-head_2.png) no-repeat;
+        background-size: 47px auto;
+        left: 0;
+        top: 15px;
+      }
+    }
+
+    div.stars {
+        height: 34px;
+      img {
+        margin-top: 10px;
+        width: 18px;
+        height: 17px;
+        // margin-right: 5px;
+
+      }
+    }
+
+    .pics {
+      li {
+        float: left;
+        margin-right: 11px;
+        img {
+          width: 102px;
+        }
+      }
+    }
+
+    p.eva {
+      font-size: 18px;
+      margin-bottom: 14px;
+    }
+    p:last-child {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #ccc;
+      height: 26px;
+    }
+
+  }
+}

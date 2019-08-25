@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>快速排序</title>
+</head>
+<body>
+</body>
+<script>
+	var arr = [9, 6,15,3,5,12,24,13,6,5,7,8,14, 4, 1, 6, 5,12,21,37, 8, 3, 9];
+
+	var sort_quick = function (arr, l_index, r_index) {
+		console.log(arr.length);
+		// 记录数组左右起点 索引值
+		var i = l_index;
+		var j = r_index;
+		
+		// 选择每个数组的第一个数作为 排序比较值
+		var comp = arr[l_index];
+		var temp = 0;
+
+		// 开始循环比较
+		// 以下 1 2 要注意i<j ,当i=j时退出循环
+		while (i < j) {
+			// 1 先从左边开始，取第二个数与 comp 比较，若 comp 大（即<=comp）继续向下取值，直到 >comp,停止，记录i
+			while (i < j && arr[i] <= comp) i++;
+
+			// 2 从右边开始，取数与 comp 比较，若 comp 小（即>comp）继续向前取值，直到 <=comp,停止，记录j
+			while (i < j && arr[j] > comp) j--;
+
+			// 交换arr[i] arr[j] 并重复1 2 步
+			if (i < j) {
+				temp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = temp;
+			}
+
+		}
+		
+		// 循环结束 交换arr[0] arr[i-1] 得到结果是 在i 的左边是小于或等于comp 的数 右边是大于comp 的数
+		temp = arr[l_index];
+		arr[l_index] = arr[i-1];
+		arr[i-1] = temp;
+
+		// 开始递归 
+		// console.log(arr[x], arr[y]);
+		// console.log(r_index);
+			console.log(arr + ' ');
+			console.log(i+ '/' + r_index + '内');
+		if (i-2 > l_index && i < j) {
+			sort_quick(arr, l_index, i-2);
+		}
+		if (r_index > j && i < j) {
+			sort_quick(arr, j, r_index);
+		}
+		
+	}
+	// sort_quick(arr, 0, arr.length-1);
+
+	console.log(Math.floor(-2.8));
+
+</script>
+
+</html>

@@ -1,0 +1,128 @@
+html {
+  background-color: #f9f9f9;
+}
+body {
+  background-color: #F2F2F2;
+  font-size: 16px;
+}
+input {
+  border: none;
+  outline: none;
+}
+
+// ------------- payee 部分 --------------------
+.payee {
+  height: 185px;
+  margin-top: 24px;
+  background: url(../images/pay-bg.png) repeat-x;
+  background-size: 24px auto;
+  padding-left: 25px;
+  p {
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+    color: #333;
+  }
+}
+
+// -------------- pay-mode --------------------
+.pay-mode {
+  background-color: #fff;
+  margin-bottom: 25px;
+  h3 {
+    height: 94px;
+    line-height: 94px;
+    font-size: 26px;
+    color: #333333;
+    padding-left: 25px;
+    font-weight: 400;
+    span {
+      color: #FF8501;
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      height: 88px;
+      line-height: 88px;
+      color: #333;
+      font-size: 24px;
+      padding-left: 120px;
+      border-top: 2px solid #F1F1F1;
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 83px;
+        height: 48px;
+        left: 0px;
+        top: 25px;
+      }
+
+    }
+    li:nth-child(1)::before {
+      background: url(../images/pay-icon.png) no-repeat right 0px ;
+      background-size: 60px auto;
+    }
+    li:nth-child(2)::before {
+      background: url(../images/pay-icon.png) no-repeat right -55px;
+      background-size: 60px auto;
+    }
+    li:nth-child(3)::before {
+      background: url(../images/pay-icon.png) no-repeat right -111px ;
+      background-size: 60px auto;
+    }
+    li:nth-child(4)::before {
+      background: url(../images/pay-icon.png) no-repeat right -166px;
+      background-size: 60px auto;
+    }
+  }
+}
+
+
+// -------------- pay-check 支付密码-----------------------
+.pay-check {
+  height: 493px;
+  padding-left: 43px;
+  background-color: #fff;
+  padding-top: 32px;
+  label {
+    display: block;
+    width: 660px;
+    height: 77px;
+    line-height: 77px;
+    font-size: 24px;
+    color: #333333;
+
+    input {
+      float: right;
+      width: 439px;
+      height: 59px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 9px;
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+  label:nth-child(2) input{
+    color: #fff;
+    background-image: -webkit-linear-gradient(left, #B806EC, #E82EA4);
+    font-size: 20px;
+  }
+}
+
+// -------------- 确认支付 to-pay -------------
+.to-pay {
+  position: fixed;
+  bottom: 0;
+  width: 750px;
+  height: 96px;
+  line-height: 96px;
+  font-size: 29px;
+  background-color: #FF8501;
+  color: #fff;
+  text-align: center;
+}

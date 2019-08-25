@@ -1,0 +1,238 @@
+@base :75;
+body {
+  width: 750rem/@base;
+  // height: 1334rem/@base;
+  height: 1280rem/@base;
+  margin: 0 auto;
+  background-color: #F3F3F3;  
+  font-size: 20rem/@base;
+  color: #ffffff;
+}
+// ----------------------------------------------banner部分
+.banner {
+  position: relative;
+  height: 405px;
+  overflow: hidden;
+  a {
+    display: block;
+    width: 750px;
+    height: 402px;
+    background: url(../uploads/banner.png) no-repeat;
+    background-size: 750px auto;
+  }
+  // div {
+  //   position: absolute;
+  //   width: 600px;
+  //   text-align: center;
+  //   top: 208px;
+  //   left: 50%;
+  //   transform: translate(-50%);
+  //   h1 {
+  //     margin: 0;
+  //     font-size: 50px;
+  //     height: 88px;
+  //     line-height: 88px;
+  //   }
+  //   p {
+  //     font-size: 24px;
+  //   }
+  // }
+}
+
+// --------------------------------------------------nav部分
+nav {
+  width: 716px;
+  height: 480px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: #fff;
+  .t-nav {
+    width: 646px;
+    height: 270;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 46px auto 0;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #ccc;
+    a {
+      flex: 25%;
+      height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        flex: 4;
+        width: 91px;
+        height: 91px;
+        
+        // background-color: red;
+        
+      }
+      &:nth-child(1) span {
+        background: url(../images/nav.png) no-repeat 0 -295px;
+        background-size: 91px auto;        
+      }
+      &:nth-child(2) span {
+        background: url(../images/nav.png) no-repeat 0 -105px;
+        background-size: 91px auto;
+      }
+      &:nth-child(3) span {
+        background: url(../images/nav.png) no-repeat 0 -7px;
+        background-size: 91px auto;
+      }
+      &:nth-child(4) span {
+        background: url(../images/nav.png) no-repeat 0 -488px;
+        background-size: 91px auto;
+      }
+      &:nth-child(5) span {
+        background: url(../images/nav.png) no-repeat 0 -295px;
+        background-size: 91px auto;
+      }
+      &:nth-child(6) span {
+        background: url(../images/nav.png) no-repeat 0 -583px;
+        background-size: 91px auto;
+      }
+      &:nth-child(7) span {
+        background: url(../images/nav.png) no-repeat 0 -391px;
+        background-size: 91px auto;
+      }
+      &:nth-child(8) span {
+        background: url(../images/nav.png) no-repeat 0 -197px;
+        background-size: 91px auto;
+      }
+      p {
+        width: 100px;
+        height: 60px;
+        font-size: 22px;
+        line-height: 60px;
+        text-align: center;
+        color: #878787;
+        // background-color: pink;
+      }
+    }
+  }
+
+  .b-nav {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 69px;
+      height: 72px;
+      top: 25px;
+      left: 50px;
+      background: url(../images/news.png) no-repeat;
+      background-size: 69px auto;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 0px;
+      height: 65px;
+      border-left: 1px solid blue;
+      top: 30px;
+      left: 134px;
+    }
+
+
+    .news {
+      margin-top: 25px;
+      a {
+        position: relative;
+        display: block;
+        padding-left: 240px; 
+        height: 43px;
+        font-size: 24px;
+        color: #B7B7B7;
+  
+      }
+
+      a::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 67px;
+        height: 29px;
+        left: 158px;
+      }
+      a:nth-child(1)::before {
+        background: url(../images/info.png) no-repeat;
+        background-size: 67px auto;
+      }
+      a:nth-child(2)::before {
+        background: url(../images/hot.png) no-repeat;
+        background-size: 67px auto;
+      }
+    }
+
+  }
+
+}
+
+// ---------------------------- shopping部分 ------------------
+.shopping {
+  position: relative;
+  width: 697px;
+  height: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  h3 {
+    color: #3F3F3F;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 30px;
+  }
+  .more {
+    position: absolute;
+    left: 136px;
+    top: 25px;
+    color: #7F8699; 
+  }
+  .shopping-list {
+    width: 639px;
+    height: 245px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+
+    a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #3F3F3F;
+      h4 {
+        margin-top: 10px;
+        height: 48px;
+        font-size: 26px;
+        line-height: 48px;
+      }
+      p {
+        height: 50px;
+        font-size: 18px;
+
+      }
+      span {
+        width: 114px;
+        height: 105px;
+        background: url(../images/shopping-list_2.png) no-repeat;
+        background-size: 114px auto;
+      }
+
+    }
+    a:nth-child(2) {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  }
+
+}

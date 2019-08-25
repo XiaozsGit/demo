@@ -1,0 +1,144 @@
+// 基本rem 大小 75px
+@base : 75;
+
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+body {
+  width: 750rem/@base;
+  height: 1334rem/@base;
+  margin: 0 auto;
+  // background-color: red;
+  background: url(../images/active-bg.png) no-repeat center 0;
+  background-size: 750rem/@base auto;
+  font-size: 20rem/@base;
+  color: #ffffff;
+}
+
+
+// -------------------------------------header部分
+
+
+// ------------------------------------massages部分
+.massages {
+  margin: 0 auto;
+  padding-top: 120rem/@base;
+  text-align: center;
+  h2 {
+    font-size: 55rem/@base;
+    height: 70rem/@base;
+    font-weight: 500;
+    letter-spacing: 10rem/@base;
+  }
+  h3 {
+    font-size: 22rem/@base;
+    font-weight: 400;
+    letter-spacing: 5rem/@base;
+
+    span {
+      letter-spacing: 2rem/@base;
+      color: #FBDD55;
+    }
+  }
+}
+
+// -----------------------------------content 部分
+.content {
+  position: relative;
+  width: 678rem/@base;
+  height: 606rem/@base;
+  margin: 380rem/@base auto 0;
+  text-align: center;
+  background-color: #FBECFF;
+  padding-top: 56rem/@base; 
+
+  // 图案仰视的下边框
+  &::after {
+    position: absolute;
+    content: "";
+    width: 678rem/@base;
+    height: 12rem/@base;
+    display: block;
+    background: url(../images/border.png) no-repeat;
+    background-size: 678rem/@base auto;
+    bottom: -12rem/@base;
+  }
+
+  h3 {
+    font-size: 30rem/@base;
+    height: 64rem/@base;
+    color: #FD832D;
+  }
+  .redpacket {
+    margin: 0 auto;
+    width: 605rem/@base;
+    height: 239rem/@base;
+    border-bottom: 3rem/@base dashed #FD832D; 
+    background: url(../images/money.png) no-repeat top center;
+    background-size: 451rem/@base 186rem/@base;
+
+    h2 {
+      font-size: 42rem/@base;
+      padding-top: 79rem/@base;
+      font-weight: 400rem/@base;
+    }
+    div {
+      font-size: 18rem/@base;
+      padding: -20rem/@base;
+      p {
+        padding: 0;
+        font-size: 12rem/@base;
+        padding: -20rem/@base;
+      }
+    }
+  }
+
+  div:nth-child(3) {
+    height: 74rem/@base;
+    line-height: 74rem/@base;
+    font-size: 30rem/@base;
+    color: #FD832D;
+  }
+  div:nth-child(4), div:nth-child(5) {
+    height: 38rem/@base;
+    line-height: 38rem/@base;
+    font-size: 22rem/@base;
+    color: #FD832D;
+  }
+  .receive {
+    position: absolute;
+    width: 220rem/@base;
+    height: 66rem/@base;
+    line-height: 66rem/@base;
+    border: 2rem/@base solid #FD832D;
+    border-radius: 34rem/@base;
+    font-size: 24rem/@base;
+    text-align: center;
+    background-color: #FFD8AB;
+    color: #FD832D;
+    bottom: 32rem/@base;
+    left: 56rem/@base;
+  }
+  .invite {
+    position: absolute;
+    width: 324rem/@base;
+    height: 68rem/@base;
+    line-height: 68rem/@base;
+    border-radius: 34rem/@base;
+    font-size: 24rem/@base; 
+    text-align: center;
+    background-color: #FFC340;
+    color: #6D4A0A;
+    bottom: 32rem/@base;
+    right: 56rem/@base;
+  }
+}

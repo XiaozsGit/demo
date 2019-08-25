@@ -1,0 +1,125 @@
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 32px !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+body {
+  width: 10rem;
+  height: 17.78666667rem;
+  margin: 0 auto;
+  background: url(../images/active-bg.png) no-repeat center 0;
+  background-size: 10rem auto;
+  font-size: 0.26666667rem;
+  color: #ffffff;
+}
+.massages {
+  margin: 0 auto;
+  padding-top: 1.6rem;
+  text-align: center;
+}
+.massages h2 {
+  font-size: 0.73333333rem;
+  height: 0.93333333rem;
+  font-weight: 500;
+  letter-spacing: 0.13333333rem;
+}
+.massages h3 {
+  font-size: 0.29333333rem;
+  font-weight: 400;
+  letter-spacing: 0.06666667rem;
+}
+.massages h3 span {
+  letter-spacing: 0.02666667rem;
+  color: #FBDD55;
+}
+.content {
+  position: relative;
+  width: 9.04rem;
+  height: 8.08rem;
+  margin: 5.06666667rem auto 0;
+  text-align: center;
+  background-color: #FBECFF;
+  padding-top: 0.74666667rem;
+}
+.content::after {
+  position: absolute;
+  content: "";
+  width: 9.04rem;
+  height: 0.16rem;
+  display: block;
+  background: url(../images/border.png) no-repeat;
+  background-size: 9.04rem auto;
+  bottom: -0.16rem;
+}
+.content h3 {
+  font-size: 0.4rem;
+  height: 0.85333333rem;
+  color: #FD832D;
+}
+.content .redpacket {
+  margin: 0 auto;
+  width: 8.06666667rem;
+  height: 3.18666667rem;
+  border-bottom: 0.04rem dashed #FD832D;
+  background: url(../images/money.png) no-repeat top center;
+  background-size: 6.01333333rem 2.48rem;
+}
+.content .redpacket h2 {
+  font-size: 0.56rem;
+  padding-top: 1.05333333rem;
+  font-weight: 5.33333333rem;
+}
+.content .redpacket div {
+  font-size: 0.24rem;
+  padding: -0.26666667rem;
+}
+.content .redpacket div p {
+  padding: 0;
+  font-size: 0.16rem;
+  padding: -0.26666667rem;
+}
+.content div:nth-child(3) {
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  font-size: 0.4rem;
+  color: #FD832D;
+}
+.content div:nth-child(4),
+.content div:nth-child(5) {
+  height: 0.50666667rem;
+  line-height: 0.50666667rem;
+  font-size: 0.29333333rem;
+  color: #FD832D;
+}
+.content .receive {
+  position: absolute;
+  width: 2.93333333rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  border: 0.02666667rem solid #FD832D;
+  border-radius: 0.45333333rem;
+  font-size: 0.32rem;
+  text-align: center;
+  background-color: #FFD8AB;
+  color: #FD832D;
+  bottom: 0.42666667rem;
+  left: 0.74666667rem;
+}
+.content .invite {
+  position: absolute;
+  width: 4.32rem;
+  height: 0.90666667rem;
+  line-height: 0.90666667rem;
+  border-radius: 0.45333333rem;
+  font-size: 0.32rem;
+  text-align: center;
+  background-color: #FFC340;
+  color: #6D4A0A;
+  bottom: 0.42666667rem;
+  right: 0.74666667rem;
+}

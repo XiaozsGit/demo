@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+  var arr = [65, 97, 76, 13, 27, 49, 58];
+  var index = 0;
+  var temp = 0;
+  var sort_maopao = function (arr) {
+
+    for (var i = 0; i < arr.length; i++) {
+
+      for (var j = 0; j < arr.length - i; j++) {
+        if (arr[j] >= arr[j + 1]) {
+
+          temp = arr[j];
+          arr[j] = arr[j + 1];
+          arr[j + 1] = temp;
+
+        }
+      }
+    }
+    console.log('冒泡法：' + arr);
+  }
+  sort_maopao(arr);
+</script>
+
+</html>

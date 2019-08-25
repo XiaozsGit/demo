@@ -1,0 +1,180 @@
+body {
+  margin: 0 auto;
+  width: 10rem;
+  font-size: 0.16rem;
+}
+.box {
+  height: 17.78666667rem;
+  background: url(../images/login-bg.png) no-repeat;
+  background-size: 10rem auto;
+  position: relative;
+  overflow: hidden;
+}
+.logo {
+  width: 3.24rem;
+  height: 1.73333333rem;
+  position: absolute;
+  top: 1.46666667rem;
+  left: 3.44rem;
+  background: url(../images/LOGO.png) no-repeat 0 0;
+  background-size: 3.24rem auto;
+  text-indent: -999em;
+  overflow: hidden;
+}
+.content {
+  position: relative;
+  width: 8.16rem;
+  height: 10.92rem;
+  margin: 5rem auto 0;
+  background: -webkit-linear-gradient(top, #D049FC, #A078F2);
+  border-radius: 0 0.33333333rem 0.33333333rem 0.33333333rem;
+  border: 1px solid #D049FC;
+}
+.content .load,
+.content .logon,
+.content .load2,
+.content .logon2 {
+  position: absolute;
+  height: 0.94666667rem;
+  line-height: 0.88rem !important;
+  border-radius: 0.33333333rem 0.33333333rem 0 0;
+  text-align: center;
+  font: 700 0.4rem "微软雅黑";
+  top: -0.88rem;
+}
+.content .load {
+  width: 4.08rem;
+  background-color: #D049FC;
+  color: #fff;
+  left: -0.01333333rem;
+}
+.content .logon2 {
+  width: 3.64rem;
+  left: 4.26666667rem;
+  background-color: #fff;
+  color: #D049FC;
+}
+.content .load2 {
+  height: 1.26666667rem;
+  width: 3.8rem;
+  color: #D049FC;
+  background-color: #fff;
+  left: 0.25333333rem;
+}
+.content .logon {
+  width: 3.90666667rem;
+  left: 4.26666667rem;
+  color: #fff;
+  background-color: #D049FC;
+}
+.content .content-load {
+  display: none;
+  width: 7.65333333rem;
+  height: 10.56rem;
+  margin: 0.06666667rem auto;
+  background-color: #fff;
+  border-radius: 0 0.33333333rem 0.33333333rem 0.33333333rem;
+  box-sizing: border-box;
+  padding-top: 0.6rem;
+}
+.content .content-logon {
+  width: 7.65333333rem;
+  height: 10.56rem;
+  margin: 0.06666667rem auto;
+  background-color: #fff;
+  border-radius: 0.33333333rem 0 0.33333333rem 0.33333333rem;
+  box-sizing: border-box;
+  padding-top: 0.6rem;
+}
+.content .content-logon input {
+  position: relative;
+  display: block;
+  outline: none;
+  border: none;
+  width: 5.18666667rem;
+  height: 1.33333333rem;
+  margin: 0.13333333rem auto;
+  border-bottom: 0.02666667rem solid #ccc;
+  line-height: 1.33333333rem;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  color: #000;
+  font-size: 0.32rem;
+}
+.content .content-logon input::-webkit-input-placeholder {
+  /* placeholder颜色  */
+  color: #aab2bd;
+  font-size: 0.32rem;
+}
+.content .content-logon span {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  left: 1.73333333rem;
+  z-index: 1;
+}
+.content .content-logon span:nth-child(1) {
+  position: absolute;
+  top: 1.16rem;
+  background: url(../images/login-icon.png) no-repeat 0 -0.58666667rem;
+  background-size: 0.46666667rem auto;
+}
+.content .content-logon span:nth-child(3) {
+  position: absolute;
+  top: 2.53333333rem;
+  background: url(../images/login-icon.png) no-repeat 0 -1.16rem;
+  background-size: 0.46666667rem auto;
+}
+.content .content-logon span:nth-child(6) {
+  position: absolute;
+  top: 4.10666667rem;
+  background: url(../images/login-icon.png) no-repeat 0 0;
+  background-size: 0.46666667rem auto;
+}
+.content .content-logon span:nth-child(8) {
+  position: absolute;
+  top: 5.50666667rem;
+  background: url(../images/login-icon.png) no-repeat 0 0;
+  background-size: 0.46666667rem auto;
+}
+.content .content-logon input:nth-child(5) {
+  position: absolute;
+  font-size: 0.32rem;
+  width: 1.6rem;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  right: 1.45333333rem;
+  top: 2.66666667rem;
+  border: none;
+  z-index: 2;
+  text-align: left;
+  color: #4f3c7a;
+}
+.content .content-logon input:nth-child(10) {
+  margin-top: 0.33333333rem;
+  border-radius: 0.13333333rem;
+  height: 0.66666667rem;
+  line-height: 0.66666667rem;
+  background: -webkit-linear-gradient(left, #C846FE, #9454FA);
+  margin: 0;
+  padding: 0;
+  left: 1.25333333rem;
+  bottom: -0.4rem;
+  border: none;
+  z-index: 2;
+  color: #fff;
+}
+.content .content-logon .protocol {
+  font-size: 0.29333333rem;
+  text-align: center;
+  margin-top: 1.2rem;
+  color: #cdcbcb;
+}
+.content .content-logon .protocol a {
+  color: #9c51fb;
+}
+.content2 {
+  border-radius: 0.33333333rem 0 0.33333333rem 0.33333333rem;
+}

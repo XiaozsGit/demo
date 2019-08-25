@@ -1,0 +1,187 @@
+// ----------header 部分 --------------------
+header {
+  // 背景颜色与公用颜色不同
+  background: #344455;
+}
+
+// ----------- signin 签到部分 --------------
+.signin {
+  height: 471px;
+  background-image: -webkit-linear-gradient(left, #FF6951, #FF9655);
+  padding-left: 60px;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      height: 145px;
+      h5 {
+        color: rgba(255, 255, 255, .4);
+        height: 56px;
+        line-height: 56px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+      a {
+        flex: 1;
+        color: #fff;
+        font-size: 22px;
+        height: 64px;
+        line-height: 38px;
+        p {
+          display: none;
+          font-family: 'iconfont';
+        }
+      }
+
+      .signed {
+        color: #FFCD97;
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 71px;
+    height: 56px;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+  p {
+    height: 60px;
+    color: #fff;
+    font-size: 25px;
+    padding-left: 5px;
+  }
+  .sign-now {
+    background-color: #fff;
+    color: #344455;
+    text-align: center;
+    width: 627px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 7px;
+    padding-left: 5px;
+    font-size: 28px;
+  }
+
+
+}
+
+// ------------ exchange 部分 ---------------
+.exchange {
+  height: 152px;
+  border-bottom: 20px solid #F6F5F8;
+  .l-info {
+    float: left;
+    padding-left: 20px;
+    margin-top: 42px;
+    h3 {
+      height: 30px;
+      line-height: 30px;
+      color: #394450;
+      font-size: 30px;
+      font-weight: 400;
+    }
+    p {
+      height: 20px;
+      margin-top: 22px;
+      font-size: 20px;
+      color: #747474;
+    }
+  }
+  
+  .r-now {
+    float: right;
+    margin: 51px 53px 0 0;
+    width: 143px;
+    height: 60px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .to-exchange {
+    background-image: -webkit-linear-gradient(left, #FF6A52, #FF9655);
+    &::after {
+      content: '马上兑换';
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .exchanged {
+    background-color: #FFC8B2;
+    &::after {
+      content: '已兑换';
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// ------------------ 抽奖 lottery ------------------
+.lottery {
+  padding-bottom: 5px;
+  h3 {
+    margin: 12px 0 26px 47px;
+    font-weight: 400;
+    font-size: 28px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    border-left: 5px solid #FFD158;
+    color: #3A4450;
+  }
+
+  .totry {
+    width: 650px;
+    margin: 0 auto 35px;
+    height: 200px;
+    background: url(../images/lottery-bg.png) no-repeat;
+    background-size: 650px auto;
+    padding-left: 50px;
+    box-sizing: border-box;
+    color: #FFFEFE;
+    overflow: hidden;
+
+    h4 {
+      font-weight: 400;
+      margin-top: 42px;
+      height: 34px;
+      line-height: 42px;
+      font-size: 34px;
+    }
+
+    p {
+      margin-top: 25px;
+      height: 22px;
+      // line-height: 42px;
+      font-size: 22px;
+    }
+
+   .try {
+      width: 148px;
+      height: 28px;
+      border: 1px solid #fff; 
+      border-radius: 15px;
+      margin-top: 25px;
+      line-height: 30px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+ }
+ 
+}

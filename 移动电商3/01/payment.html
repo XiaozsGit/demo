@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
+  <link rel="stylesheet" href="./css/payment.css">
+
+  <title>现在付款</title>
+</head>
+
+<body>
+  <!-- header部分 -->
+  <header>
+    <a>&#xe7ea;</a>
+    <h3>现在付款</h3>
+    <a>&#xe610;</a>
+  </header>
+
+  <!-- 收款方 payee -->
+  <div class="payee">
+    <p>支付单号：4567732985642148</p>
+    <p>收款方：天下烘焙旗舰店</p>
+  </div>
+
+  <!-- 支付方式 pay-mode -->
+  <div class="pay-mode">
+    <h3>需支付：<span>￥38.60</span></h3>
+    <ul>
+      <li>微信扫码支付</li>
+      <li>支付宝扫码支付</li>
+      <li>网银支付</li>
+      <li>其他支付</li>
+    </ul>
+  </div>
+
+  <!-- 支付密码 pay-check -->
+  <div class="pay-check">
+    <label for="password">支付密码： <input type="password" id="password" placeholder="支付密码，不是登录密码"></label>
+    <label for="btn">发送验证码： <input type="button" id="btn" value="点击发送短信验证码"></label>
+    <label for="checkcode">输入验证码： <input type="text" id="checkcode" ></label>
+  </div>
+
+  <!-- 确认支付 to-pay -->
+  <div class="to-pay">
+    确认支付
+  </div>
+
+
+</body>
+
+<script> 
+var arr = [5,5,5,8,2,3,5,4,8,6,2];
+var max =arr[0];
+var max_index = [1];
+var max_i = 1;
+
+for (var i = 1; i < arr.length; i++) {
+  if (max == arr[i]) {
+    max_index[max_i] = i;
+    max_i++;
+  }else if (max < arr[i]) {
+    max = arr[i];
+    max_index = [];
+    max_index[0] = i;
+    max_i = 1;
+  }
+}
+</script>
+</html>

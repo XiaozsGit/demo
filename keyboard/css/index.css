@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #ddd;
+}
+ul {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+li {
+  width: 72px;
+  height: 65px;
+  line-height: 63px;
+  text-align: center;
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #666;
+  border-radius: 12px;
+  font-size: 18px;
+  color: #444;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.box {
+  width: 1200px;
+  border: 1px solid #666;
+  margin: 30px auto 0;
+  box-sizing: border-box;
+  padding: 5px 3px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+.box ul:nth-child(1) li:last-child {
+  width: 124px;
+  margin-right: 0px;
+  text-align: right;
+}
+.box ul:nth-child(2) li:first-child {
+  width: 108px;
+  text-align: left;
+}
+.box ul:nth-child(2) li:last-child {
+  width: 86px;
+  margin-right: 0px;
+}
+.box ul:nth-child(3) li:first-child {
+  width: 126px;
+  text-align: left;
+}
+.box ul:nth-child(3) li:last-child {
+  width: 150px;
+  margin-right: 0px;
+  text-align: right;
+}
+.box ul:nth-child(4) li:first-child {
+  width: 165px;
+  text-align: left;
+}
+.box ul:nth-child(4) li:last-child {
+  width: 193px;
+  margin-right: 0px;
+  text-align: right;
+}
+.box ul:nth-child(5) {
+  margin: 0;
+}
+.box ul:nth-child(5) li:first-child {
+  width: 84px;
+  text-align: left;
+}
+.box ul:nth-child(5) li.spacing {
+  width: 400px;
+}
+.box ul:nth-child(5) li:last-child {
+  width: 272px;
+  margin-right: 0px;
+  text-align: right;
+}
+.lighten {
+  background-image: -webkit-linear-gradient(top, #c2eced, #a6c8eb);
+  color: #2427f0;
+  font-size: 21px;
+}

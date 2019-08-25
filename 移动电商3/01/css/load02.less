@@ -1,0 +1,212 @@
+body {
+  margin: 0 auto;
+  width: 750rem/@base;
+  // min-width: 320px;
+  // max-width: 750px; 
+  font-size: 12rem/@base;
+}
+
+@base: 75;
+
+.box {
+  height: 1334rem/@base;
+  background: url(../images/login-bg.png) no-repeat;
+  background-size: 750rem/@base auto;
+  position: relative;
+  overflow: hidden;
+}
+
+// ---------------------- logo部分 ---------------------------
+.logo {
+  width: 243rem/@base;
+  height: 130rem/@base;
+  position: absolute;
+  top: 110rem/@base;
+  left: 258rem/@base;
+  background: url(../images/LOGO.png) no-repeat 0 0;
+  background-size: 243rem/@base auto;
+    text-indent: -999em;
+  overflow: hidden;
+}
+
+// ---------------------- content部分重写 -------------------
+.content {
+  position: relative;
+  width: 612rem/@base;
+  height: 819rem/@base;
+  margin: 375rem/@base auto 0;
+  background: -webkit-linear-gradient(top, #D049FC,  #A078F2);
+  border-radius: 0 25rem/@base 25rem/@base 25rem/@base; 
+  border: 1px solid #D049FC;
+
+  // ------ 登录 注册 按钮 -------
+  .load, .logon, .load2, .logon2 {
+    position: absolute;
+    height: 71rem/@base;
+    line-height: (66rem/@base)!important;
+    border-radius: 25rem/@base 25rem/@base 0 0;
+    text-align: center;
+    font: 700 (30rem/@base) "微软雅黑";
+    top: -66rem/@base;
+  }
+  .load {
+    width: 306rem/@base;
+    background-color: #D049FC;
+    color:  #fff;
+    left: -1rem/@base;
+  }
+  .logon2 {
+    width: 273rem/@base;
+    left: 320rem/@base;
+    background-color: #fff;
+    color: #D049FC;
+  }
+  .load2 {
+    height: 95rem/@base;
+    width: 285rem/@base;
+    color: #D049FC;
+    background-color:  #fff;
+    left: 19rem/@base;
+  }
+
+  .logon {
+    width: 293rem/@base;
+    left: 320rem/@base;
+    color: #fff;
+    background-color: #D049FC;
+   
+  }
+
+
+  //  ------ 登录页面 -------------
+  .content-load {
+    display: none;
+    width: 574rem/@base;
+    height: 792rem/@base;
+    margin: 5rem/@base auto;
+    background-color: #fff;
+    border-radius: 0 25rem/@base 25rem/@base 25rem/@base;
+    box-sizing: border-box;
+    padding-top: 45rem/@base;
+  }
+
+  // ------------ 注册页面 ---------
+  .content-logon {
+    width: 574rem/@base;
+    height: 792rem/@base;
+    margin: 5rem/@base auto;
+    background-color: #fff;
+    border-radius: 25rem/@base 0 25rem/@base 25rem/@base;
+    box-sizing: border-box;
+    padding-top: 45rem/@base;
+
+    input {
+      position: relative;
+      display: block;
+      outline: none;
+      border: none;
+      width: 389rem/@base;
+      height: 100rem/@base;
+      margin: 10rem/@base auto;
+      border-bottom: 2rem/@base solid #ccc;
+      line-height: 100rem/@base;
+      box-sizing: border-box;
+      padding: 0 75rem/@base;
+      color: #000;
+      font-size: 24rem/@base;
+      &::-webkit-input-placeholder {
+        /* placeholder颜色  */
+       color: #aab2bd;
+       font-size: 24rem/@base;
+      }
+    }
+
+    span {
+      // 设置前四个li的基本样式
+      width: 40rem/@base;
+      height: 40rem/@base;
+      left: 130rem/@base;
+      z-index: 1;     
+    }
+    span:nth-child(1){
+      position: absolute;
+      top: 87rem/@base;
+      background: url(../images/login-icon.png) no-repeat 0 -44rem/@base;
+      background-size: 35rem/@base auto;
+    }
+    span:nth-child(3){
+      position: absolute;
+      top: 190rem/@base;
+      background: url(../images/login-icon.png) no-repeat 0 -87rem/@base;
+      background-size: 35rem/@base auto;
+    }
+    span:nth-child(6){
+      position: absolute;
+      top: 308rem/@base;    
+      background: url(../images/login-icon.png) no-repeat 0 0 ;
+      background-size: 35rem/@base auto;
+    }
+    span:nth-child(8){
+      position: absolute;
+      top: 413rem/@base;    
+      background: url(../images/login-icon.png) no-repeat 0 0 ;
+      background-size: 35rem/@base auto;
+    }
+
+
+    // 获取验证码按钮
+    input:nth-child(5) {
+      position: absolute;
+      font-size: 24rem/@base;
+      width: 120rem/@base;
+      height: 27rem/@base;
+      line-height: 27rem/@base;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      right: 109rem/@base;
+      top: 200rem/@base;
+      border: none;
+      z-index: 2;
+      text-align: left;
+      color: #4f3c7a;
+    }
+
+    // 注册按钮
+    input:nth-child(10) {
+      // position: absolute;
+      // font-size: 24rem/@base;
+      // width: 120rem/@base;
+      margin-top: 25rem/@base;
+      border-radius: 10rem/@base;
+      height: 50rem/@base;
+      line-height: 50rem/@base;
+      background: -webkit-linear-gradient(left, #C846FE,  #9454FA);
+      margin: 0;
+      padding: 0;
+      left: 94rem/@base;
+      bottom: -30rem/@base;
+      border: none;
+      z-index: 2;
+      // text-align: left;
+      color: #fff;
+    }
+
+    .protocol {
+      font-size: 22rem/@base;
+      text-align: center;
+      margin-top:  90rem/@base;
+      color: rgb(205, 203, 203);
+
+      a {
+        // position: relative;
+        color: rgb(156,81,251);
+      }
+    }
+  }
+
+}
+
+.content2 {
+  border-radius:25rem/@base 0 25rem/@base 25rem/@base; 
+}

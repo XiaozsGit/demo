@@ -1,0 +1,175 @@
+html {
+  background-color: #fff;
+}
+body {
+  background-color: #F7F7F7;
+}
+
+// --------------- banner部分 ---------------------
+.banner {
+  position: relative;
+
+  // 广告图片
+  a.ads {
+    display: block;
+    height: 517px;
+    background: url(../uploads/goods_3.png) no-repeat;
+    background-size: 750px auto;
+  }
+  // 产品价格
+  .price {
+    position: absolute;
+    width: 100%;
+    height: 92px;
+    background-color: #000;
+    color: #fff;
+    bottom: 228px;
+    
+    p {
+      padding-top: 26px;
+      padding-left: 54px;
+      font-size: 18px;
+      span {
+        font-size: 46px;
+      }
+  
+    }
+
+  }
+  // 活动时间
+  .active_time {
+    position: absolute;
+    width: 280px;
+    height: 100px;
+    background: url(../images/btn-bg.png) no-repeat;
+    background-size: 280px auto;
+    bottom: 228px;
+    right: 0;
+    color: #EDECEC;
+    padding-top: 6px;
+    box-sizing: border-box;
+    p {
+      text-align: center;
+      margin: 16px 45px 0 110px;
+      font-size: 22px;
+    }
+  }
+  // 库存
+  .messages {
+    width: 708px;
+    height: 228px;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding-left: 29px;
+    h3 {
+      height: 98px;
+      line-height: 98px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #424242;
+      padding-left: 3px; 
+    }
+    p {
+      font-size: 24px;
+      &:nth-child(2) {
+        position: relative;
+        color: #A5A5A5;
+        height: 69px;
+        line-break: 29px;
+        padding-left: 47px;
+        &::before {
+          position: absolute;
+          content: "";
+          // display: block;
+          left: 0;
+          width: 29px;
+          height: 29px;
+          background: url(../images/shipment.png) no-repeat;
+          background-size: 29px;
+        }
+      }
+      &:nth-child(3) {
+        color: #4E4E4E;
+        span {
+          color: #FB444E;
+        }
+      }
+    }
+
+  }
+}
+
+// ---------------- goods 关于商品 --------------------
+.goods {
+  position: relative;
+  h2 {
+    position: relative;
+    height: 112px;
+    line-height: 171px;
+    font-size: 33px;
+    font-weight: 400;
+    color: #696969;
+    text-align: center;
+    span {
+      // display: inline-block;
+      height: 25px;
+      font-size: 15px;
+      color: #D9D9D9;
+      box-sizing: border-box;
+      padding-bottom: 5px;
+    }
+  }
+  p {
+    font-size: 12px;
+    color: #BEBEBE;
+    height: 70px;
+    text-align: center;
+  }
+  .information {
+    a {
+      display: block;
+      width: 100%;
+      height: 313px;
+      background: url(../uploads/goods_4.png) no-repeat;
+      background-size: 750px auto;
+    }
+  }
+
+  .buy {
+    position: fixed;
+    bottom: 0;
+    height: 98px;
+    background-color: #fff;
+
+    a {
+      margin-top: 14px;
+      float: left;
+      width: 131px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #7C7C7C;
+      span:nth-child(1) {
+        flex: 1;
+        font-family: 'iconfont';
+        font-size: 41px;
+
+      }
+      span:nth-child(2) {
+        font-size: 16px;
+        flex: 1;
+      }
+    }
+    .r-buy {
+      float: right;
+      margin-top: 0;
+      display: block;
+      width: 488px;
+      background-color: #FA8009;
+      color: #fff;
+      text-align: center;
+      line-height: 98px;
+      font-size: 26px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			margin-left: 200px;
+			margin-top: 80px;
+		}
+		.small {
+			width: 300px;
+			height: 300px;
+			float: left;
+			position: relative;
+			overflow: hidden;
+			text-emphasis: center;	
+			background: url("image/yxw.jpg") no-repeat;
+			background-size: auto 300px;
+		}
+		.big {
+			width: 600px;
+			height: 600px;
+			float: left;
+			margin-left: 20px;
+			/*background-color: #ccc;*/
+			background: url("image/yxw.jpg") no-repeat;
+			background-size: auto 1800px;
+			display: none;
+		}
+		.small .select {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background-color: rgba(58, 82, 216, 0.418);
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<!-- 缩略图 -->
+		<div class="small" id="small">
+			<!-- 选择框 -->
+			<div class="select" id="select"></div>
+		</div>
+		<!-- 放大图 -->
+		<div class="big" id="big"></div>
+	</div>
+
+	<script src="09图片位置.js"></script>
+	<script>
+
+		var small = document.getElementById('small');
+		var big = document.getElementById('big');
+		var select = document.getElementById('select');
+
+		// mouseX mouseY 鼠标在盒子中的坐标 
+		// indexResult 透明提示盒子顶点计算返回值（包含横纵坐标 indexX indexY）
+		// enlaugeFlag 图片放大倍数
+		var mouseX, mouseY;
+		var indexResult;
+		var enlaugeFlag;
+		var selectWidth;
+		var smallWidth = small.offsetWidth;
+		var bigWidth;
+		small.onmousemove = function (e) {
+
+			e = e || window.event;
+			// 1 获取鼠标在图片中的位置
+			mouseX = e.pageX - this.offsetLeft;
+			mouseY = e.pageY - this.offsetTop;
+
+			// 2 鼠标进入时 显示鼠标所在区域 一个透明的背景颜色 鼠标离开时取消显示
+			select.style.display = 'block';
+			selectWidth = select.offsetWidth;
+			indexResult = smallor(mouseX, mouseY, selectWidth, smallWidth);
+
+			// 设置透明提示框跟随鼠标
+			select.style.left = indexResult.indexX + 'px';
+			select.style.top = indexResult.indexY + 'px';
+
+			console.log(indexResult.indexX,indexResult.indexYxxx	);
+
+			// 3 鼠标进入时在右侧显示放大图片 鼠标离开时取消显示
+			big.style.display = 'block';
+			bigWidth = big.offsetWidth;
+
+			// 设置放大图片位置跟随透明提示框
+			// 图片放大倍数取决于两个盒子中的图片比值
+			// 小盒子与透明盒子的比
+			// 放大图片尺寸与大盒子的比
+			// 两个比值应该一致，可以修改 .small .select 的width值。
+			enlaugeFlag = bigWidth/selectWidth;
+			console.log(bigWidth);
+			big.style.backgroundPositionX = -(indexResult.indexX)*enlaugeFlag +'px';
+			big.style.backgroundPositionY = -(indexResult.indexY)*enlaugeFlag +'px';
+
+		}
+
+		// 鼠标离开事件
+		small.onmouseout = function (e) {
+
+			e = e || window.event;
+			// 鼠标离开 取消显示
+			select.style.display = 'none';
+			big.style.display = 'none';
+		}
+		
+	</script>
+</body>
+</html>

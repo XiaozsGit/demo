@@ -1,0 +1,139 @@
+body {
+  background-color: #f3f3f3;
+}
+header {
+  background: -webkit-linear-gradient(left, #F447B9, #B807EC);
+}
+header a:nth-child(2) {
+  right: 40px;
+}
+.common-box {
+  width: 686px;
+  height: 280px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 28px auto;
+  box-shadow: 0px 0px 7px 3px rgba(153, 153, 153, 0.4);
+}
+.common-box h3 {
+  border-bottom: 1px solid #E0E0E0;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 30px;
+  font-size: 30px;
+  font-weight: 400;
+  color: #333333;
+}
+.common-box h3 span {
+  font-family: 'iconfont';
+  font-size: 22px;
+  color: #999;
+  float: right;
+}
+.common-box .items {
+  display: flex;
+  padding: 50px 10px 0;
+}
+.common-box .items a {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.common-box .items a::before {
+  content: '';
+  display: block;
+  width: 61px;
+  height: 90px;
+  flex: 1;
+}
+.common-box .items a span {
+  padding-top: 28px;
+  height: 20px;
+  flex: 1;
+  font-size: 22px;
+  color: #666666;
+}
+div.my {
+  background: url(../images/user-bg.png) no-repeat;
+  background-size: 750px auto;
+}
+div.my .personal {
+  width: 686px;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+div.my .personal > a {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 23px auto 0;
+  background-color: #DB2DD6;
+  overflow: hidden;
+}
+div.my .personal > a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 135px;
+}
+div.my .personal .items {
+  padding: 34px 10px 0;
+}
+div.my .personal .items a {
+  flex: 1;
+  align-items: center;
+}
+div.my .personal .items a::before {
+  display: none;
+}
+div.my .personal .items a p {
+  padding-bottom: 16px;
+  height: 20px;
+  font-size: 22px;
+  color: #333;
+}
+div.my .personal .items a p:last-child {
+  color: #666;
+}
+.myorders .items a:nth-child(1)::before {
+  background: url(../images/indent-icon.png) no-repeat 0px 9px;
+  background-size: 61px auto;
+}
+.myorders .items a:nth-child(2)::before {
+  background: url(../images/indent-icon.png) no-repeat 0px -69px;
+  background-size: 61px auto;
+}
+.myorders .items a:nth-child(3)::before {
+  background: url(../images/indent-icon.png) no-repeat 0px -136px;
+  background-size: 61px auto;
+}
+.myorders .items a:nth-child(4)::before {
+  background: url(../images/indent-icon.png) no-repeat 0px -210px;
+  background-size: 61px auto;
+}
+.mytools .items a::before {
+  width: 51px;
+}
+.mytools .items a:nth-child(1)::before {
+  background: url(../images/tool-icon.png) no-repeat 0px 2px;
+  background-size: 51px auto;
+}
+.mytools .items a:nth-child(2)::before {
+  background: url(../images/tool-icon.png) no-repeat 0px -69px;
+  background-size: 51px auto;
+}
+.mytools .items a:nth-child(3)::before {
+  background: url(../images/tool-icon.png) no-repeat 0px -136px;
+  background-size: 51px auto;
+}
+.mytools .items a:nth-child(4)::before {
+  background: url(../images/tool-icon.png) no-repeat 0px -210px;
+  background-size: 51px auto;
+}

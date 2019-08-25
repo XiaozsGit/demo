@@ -1,0 +1,170 @@
+body {
+  background-color: #f3f3f3;
+}
+
+// ---------------------- header 部分 ---------------------------
+header {
+  background: -webkit-linear-gradient(left, #F447B9, #B807EC);
+  a:nth-child(2){
+    right: 40px;
+  }
+}
+
+// -------------------公共盒子样式 ----------------------------
+.common-box {
+    width: 686px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 28px auto;
+    box-shadow:  0px 0px 7px 3px rgba(153,153,153,0.4);
+    // -- 头部 ----
+    h3 {
+      border-bottom: 1px solid #E0E0E0;
+      height: 80px;
+      line-height: 80px;
+      padding: 0 30px;
+      font-size: 30px;
+      font-weight: 400;
+      color: #333333;
+      span {
+        font-family: 'iconfont';
+        font-size: 22px;
+        color: #999;
+        float: right;
+      }
+    }
+
+    // 具体项目 items 
+    .items {
+      display: flex;
+      padding: 50px 10px 0;
+
+      a {
+        flex: 1;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        &::before {
+          content: '';
+          display: block;
+          width: 61px;
+          height: 90px;
+          // background-color: red;
+          flex: 1;
+        }
+        span {
+          padding-top: 28px;
+          height: 20px;
+          flex: 1;
+          font-size: 22px;
+          color: #666666;
+        }
+      }
+    }
+}
+
+// ----------------------- my部分 ------------------------
+div.my {
+  background: url(../images/user-bg.png) no-repeat;
+  background-size: 750px auto;
+
+  // 个人中心
+  .personal {
+    width: 686px;
+    height: 280px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    &>a {
+      position: relative;
+      display: block;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin: 23px auto 0;
+      background-color: #DB2DD6;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 135px;
+      }
+    }
+
+    .items {
+      padding: 34px 10px 0;
+      a {
+        flex: 1;
+        align-items: center;
+
+        &::before {
+          display: none;
+        }
+        p{
+          padding-bottom: 16px;
+          height: 20px;
+          font-size: 22px;
+          color: #333;
+        }
+        p:last-child{
+          color: #666;
+        }
+      }
+    }
+
+  }
+}
+
+// ------------------ 我的订单 ----------------------------
+.myorders {
+  .items {
+    a:nth-child(1)::before {
+      background: url(../images/indent-icon.png) no-repeat 0px 9px;
+      background-size: 61px auto;
+    }
+    a:nth-child(2)::before {
+      background: url(../images/indent-icon.png) no-repeat 0px -69px;
+      background-size: 61px auto;
+    }
+    a:nth-child(3)::before {
+      background: url(../images/indent-icon.png) no-repeat 0px -136px;
+      background-size: 61px auto;
+    }
+    a:nth-child(4)::before {
+      background: url(../images/indent-icon.png) no-repeat 0px -210px;
+      background-size: 61px auto;
+    }
+  }
+}
+
+// ------------------ 我的工具 ----------------------------
+.mytools {
+  .items {
+    a::before {
+      // height: 100px;
+      width: 51px;
+    }
+    a:nth-child(1)::before {
+      background: url(../images/tool-icon.png) no-repeat 0px 2px;
+      background-size: 51px auto;
+    }
+    a:nth-child(2)::before {
+      background: url(../images/tool-icon.png) no-repeat 0px -69px;
+      background-size: 51px auto;
+    }
+    a:nth-child(3)::before {
+      background: url(../images/tool-icon.png) no-repeat 0px -136px;
+      background-size: 51px auto;
+    }
+    a:nth-child(4)::before {
+      background: url(../images/tool-icon.png) no-repeat 0px -210px;
+      background-size: 51px auto;
+    }
+  }
+}
+
+

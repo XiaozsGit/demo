@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.box {
+  position: relative;
+  width: 520px;
+  height: 400px;
+  margin: 50px auto 0;
+  color: #393B3B;
+  padding: 10px;
+  background-color: #ccc;
+}
+.box .canver {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  border-radius: 5px;
+  background-color: #FEE170;
+}
+.box .canver div {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid rgba(204, 204, 204, 0.664);
+  box-sizing: border-box;
+  color: #FDFEFC;
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 120px;
+  background-color: #2EAFFA;
+  transition: all 300ms;
+}
+.box .canver div:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.box .canver div:nth-child(2) {
+  top: 0px;
+  left: 120px;
+}
+.box .canver div:nth-child(3) {
+  top: 0px;
+  left: 240px;
+}
+.box .canver div:nth-child(4) {
+  top: 120px;
+  left: 0px;
+}
+.box .canver div:nth-child(5) {
+  top: 120px;
+  left: 120px;
+}
+.box .canver div:nth-child(6) {
+  top: 120px;
+  left: 240px;
+}
+.box .canver div:nth-child(7) {
+  top: 240px;
+  left: 0px;
+}
+.box .canver div:nth-child(8) {
+  top: 240px;
+  left: 120px;
+}
+.box .canver .llighten {
+  color: #FEE170;
+}
+.box .message {
+  position: absolute;
+  font-size: 18px;
+  right: 30px;
+  top: 15px;
+}
+.box .message a {
+  display: block;
+  width: 110px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #21A6FA;
+  color: #393B3B;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 5px;
+}

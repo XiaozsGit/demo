@@ -1,0 +1,43 @@
+#tank {
+    width: 31px;
+    height: 40px;
+    position: absolute;
+    left: 385px;
+    bottom: 102px;
+}
+#tank ul {
+    position: relative;
+}
+#tank li {
+    position: absolute;
+    list-style: none;
+
+}
+#tank li:nth-child(1) {
+    width: 7px;
+    height: 40px;
+    background-color: #3fa9f0;
+    border: 1px solid #4e4e4e;
+    left: 0;
+}
+#tank li:nth-child(2) {
+    width: 7px;
+    height: 40px;
+    background-color: #3fa9f0;
+    border: 1px solid #4e4e4e;
+    right: 0;
+}
+#tank li:nth-child(3) {
+    width: 11px;
+    height: 16px;
+    background-color: #1999ee;
+    border: 1px solid #4e4e4e;
+    left: 9px;
+    top: 13px;
+}
+#tank li:nth-child(4) {
+    width: 3px;
+    height: 23px;
+    left: 14px;
+    background-color: #64cae4;
+}

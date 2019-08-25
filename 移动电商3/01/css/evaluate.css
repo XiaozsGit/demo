@@ -1,0 +1,105 @@
+nav {
+  height: 83px;
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+nav a {
+  flex: 1;
+  margin: 14px 0 12px;
+  text-align: center;
+  line-height: 57px;
+  color: #000;
+  font-size: 22px;
+}
+nav a span {
+  position: relative;
+}
+nav a:nth-child(2) {
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+nav .lighten {
+  background-image: -webkit-linear-gradient(left, #EC1EA0, #B905EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav .lighten:after {
+  position: absolute;
+  content: '';
+  width: 150%;
+  height: 4px;
+  background-image: -webkit-linear-gradient(left, #EC1EA0, #B905EB);
+  left: -50%;
+  right: -50%;
+  margin: 0 auto;
+  bottom: -27px;
+}
+.evaluate .eva-nav {
+  padding-left: 25px;
+  padding-top: 18px;
+}
+.evaluate .eva-nav a {
+  display: inline-block;
+  padding: 9px 15px 10px 15px;
+  margin: 0 14px 18px  0;
+  border: 1px solid #CD39E6;
+  font-family: 'iconfont';
+  font-size: 18px;
+  border-radius: 20px;
+  background-image: -webkit-linear-gradient(left, #EC1EA0, #B905EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.evaluate .eva-nav .lighten {
+  border: none;
+  background: -webkit-linear-gradient(left, #EC1EA0, #B905EB);
+  -webkit-text-fill-color: white;
+}
+.evaluate .one {
+  border-top: 2px solid #ccc;
+  padding: 0 23px;
+}
+.evaluate .one h3 {
+  position: relative;
+  font-size: 18px;
+  height: 73px;
+  line-height: 73px;
+  font-weight: 400;
+  padding-left: 62px;
+  border-bottom: 2px solid #ccc;
+}
+.evaluate .one h3:before {
+  position: absolute;
+  content: "";
+  width: 47px;
+  height: 44px;
+  background: url(../uploads/user-head_2.png) no-repeat;
+  background-size: 47px auto;
+  left: 0;
+  top: 15px;
+}
+.evaluate .one div.stars {
+  height: 34px;
+}
+.evaluate .one div.stars img {
+  margin-top: 10px;
+  width: 18px;
+  height: 17px;
+}
+.evaluate .one .pics li {
+  float: left;
+  margin-right: 11px;
+}
+.evaluate .one .pics li img {
+  width: 102px;
+}
+.evaluate .one p.eva {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.evaluate .one p:last-child {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+  height: 26px;
+}
